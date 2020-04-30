@@ -10,7 +10,7 @@ describe("Our first test", () => {
 
 describe("index.html", () => {
 	// need to pass done in, as we are using an async process
-	it("should say hello", (done) => {
+	it("should say Users list", (done) => {
 		const html = fs.readFileSync("./src/index.html", "utf-8");
 		jsdom.env(html, function(err, window) {
 			const h1 = window.document.getElementsByTagName("h1")[0]; // first h1
