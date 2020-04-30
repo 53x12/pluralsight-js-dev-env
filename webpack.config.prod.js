@@ -31,7 +31,7 @@ export default {
 		new ExtractTextPlugin("[name].[contenthash].css"),
 
 		// Use CommonsChunkPlugin to create a separate bundle
-		// of vendor libraries so that they"re cached separately.
+		// of vendor libraries so that they are cached separately.
 		new webpack.optimize.CommonsChunkPlugin({
 			name: "vendor"
 		}),
