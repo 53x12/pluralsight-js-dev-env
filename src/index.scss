@@ -1,5 +1,9 @@
 // do not use vendor-specific prefix rules - autoprefixer package will do this
 
 body {
-  margin: 0;
+	font-family: sans-serif;
+}
+
+table th {
+	padding: 5px
 }
