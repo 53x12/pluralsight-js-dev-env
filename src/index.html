@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <p>Node.js makes Javascript great fun. No, really, it does.</p>
-  </body>
+<head>
+    <meta charset="UTF-8" />
+    <% if (htmlWebpackPlugin.options.fontAwesomeToken) { %>
+    <script src="https://use.fontawesome.com/<%= htmlWebpackPlugin.options.fontAwesomeToken %>.js"></script>
+    <% } %>
+</head>
+<body>
+    <h1>Users list</h1>
+    <table class="table table-striped">
+    <thead>
+        <th>Id</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Email</th>
+        <th>&nbsp;</th>
+    </thead>
+    <tbody id="users"></tbody>
+    </table>
+    <p id="today"></p>
+</body>
 </html>
